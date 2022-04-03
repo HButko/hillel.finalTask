@@ -13,13 +13,13 @@ public class RandomDataGenerator {
     }
 
     public String randomUserName() {
-        String randomString = UUID.randomUUID().toString().substring(10);
+        String randomString = UUID.randomUUID().toString().substring(5);
         LOGGER.info("Generate random username '" + randomString + "'");
         return randomString;
     }
 
     public String randomUserPass() {
-        String randomString = UUID.randomUUID().toString().substring(10);
+        String randomString = UUID.randomUUID().toString().substring(5);
         LOGGER.info("Generate random user password '" + randomString + "'");
         return randomString;
     }

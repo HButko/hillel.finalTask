@@ -1,12 +1,12 @@
 package utils.api.enums;
 
 public enum ApiList {
-    SIGN_UP("http://localhost:8080/api/auth/signup"),
-    SIGN_IN("http://localhost:8080/api/auth/signin"),
+    SIGN_UP("https://freelance.lsrv.in.ua/api/auth/signup"),
+    SIGN_IN("https://freelance.lsrv.in.ua/api/auth/signin"),
 
-    USER_UPDATE("http://localhost:8080/api/user/update"),
-    USER_ID("http://localhost:8080/api/user/"),
-    USER_INFO("http://localhost:8080/api/user/"),
+    USER_UPDATE("https://freelance.lsrv.in.ua/api/user/update"),
+    USER_ID("https://freelance.lsrv.in.ua/api/user/"),
+    USER_INFO("https://freelance.lsrv.in.ua/api/user/"),
 
     IMAGE_UPLOAD("http://localhost:8080/api/image/upload"),
     IMAGE_ID("http://localhost:8080/api/image/"),
