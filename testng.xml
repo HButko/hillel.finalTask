@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Suite" verbose="2" parallel="false">
+
+    <test name="Main set">
+        <packages>
+            <package name="com.*" />
+        </packages>
+    </test>
+</suite>
