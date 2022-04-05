@@ -2,7 +2,8 @@ package utils.api.enums;
 
 public enum JobProperty {
     TITLE("title"),
-    DESCRIPTION("description");
+    DESCRIPTION("description"),
+    MESSAGE("message");
 
     private String value;
 

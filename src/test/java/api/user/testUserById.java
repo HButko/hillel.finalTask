@@ -26,6 +26,6 @@ public class testUserById {
         int userId = userInfo.getInt("id");
         int verifyUserById = new UserByIdObject().getUserByIdRequest(userId, userToken);
 
-        Assert.assertEquals(userId, verifyUserById, "User has wrong data");
+        Assert.assertEquals(verifyUserById, userId, "User has wrong data");
     }
 }
