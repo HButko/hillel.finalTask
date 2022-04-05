@@ -4,7 +4,7 @@ public enum ApiList {
     SIGN_UP("https://freelance.lsrv.in.ua/api/auth/signup"),
     SIGN_IN("https://freelance.lsrv.in.ua/api/auth/signin"),
 
-    USER_UPDATE("https://freelance.lsrv.in.ua/api/user/update"),
+    USER_UPDATE("https://freelance.lsrv.in.ua/api/user/update/"),
     USER_INFO("https://freelance.lsrv.in.ua/api/user/"),
 
     IMAGE_UPLOAD("https://freelance.lsrv.in.ua/api/image/upload"),

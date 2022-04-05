@@ -9,18 +9,19 @@ import utils.api.enums.ApiList;
 import java.io.IOException;
 
 public class UserByIdObject {
-    public JSONObject getUserByIdRequest(String userId) throws IOException {
+    public int getUserByIdRequest(int userId, String userToken) throws IOException {
 
         Request userByIdRequest = new Request.Builder()
                 .url(ApiList.USER_INFO.getUrl() + userId)
-//                .addHeader("Authorization:", userToken)
+                .addHeader("Authorization", " " + userToken)
                 .get()
                 .build();
         OkHttpClient client = new OkHttpClient();
 
         Response response = client.newCall(userByIdRequest).execute();
         JSONObject jsonResponse = new JSONObject(response.body().string());
+        int requestedUserId = jsonResponse.getInt("id");
 
-        return jsonResponse;
+        return requestedUserId;
     }
 }

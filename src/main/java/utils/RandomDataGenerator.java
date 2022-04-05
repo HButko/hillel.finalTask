@@ -23,4 +23,16 @@ public class RandomDataGenerator {
         LOGGER.info("Generate random user password '" + randomString + "'");
         return randomString;
     }
+
+    public String randomName() {
+        String randomString = UUID.randomUUID().toString().substring(5);
+        LOGGER.info("Generate random user password '" + randomString + "'");
+        return randomString;
+    }
+
+    public String randomLastName() {
+        String randomString = UUID.randomUUID().toString().substring(5);
+        LOGGER.info("Generate random user password '" + randomString + "'");
+        return randomString;
+    }
 }

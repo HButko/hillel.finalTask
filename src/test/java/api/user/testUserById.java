@@ -19,16 +19,13 @@ public class testUserById {
 
         new SignUpObject().signUpRequest(userName, userPassword);
 
-        JSONObject signInResponse = new SignInObject().signInRequest(userName, userPassword);
+        String userToken = new SignInObject().signInRequest(userName, userPassword).getString("token");
 
-        String userToken = signInResponse.getString("token");
-        System.out.println(userToken);
         JSONObject userInfo = new UserInfoObject().getUserInfoRequest(userToken);
-        System.out.println(userInfo);
-//        String userId = userInfo.getString("id");
-//
-//        JSONObject verifyUserById = new UserByIdObject().getUserByIdRequest(userId);
-//
-//        Assert.assertEquals(userId, verifyUserById, "User has wrong data");
+
+        int userId = userInfo.getInt("id");
+        int verifyUserById = new UserByIdObject().getUserByIdRequest(userId, userToken);
+
+        Assert.assertEquals(userId, verifyUserById, "User has wrong data");
     }
 }

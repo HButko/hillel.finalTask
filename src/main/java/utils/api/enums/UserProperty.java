@@ -1,8 +1,9 @@
 package utils.api.enums;
 
 public enum UserProperty {
-    USER_NAME("userName"),
-    PASSWORD("userPassword");
+    USER_NAME("username"),
+    NAME("name"),
+    LAST_NAME("lastname");
 
     private String value;
 

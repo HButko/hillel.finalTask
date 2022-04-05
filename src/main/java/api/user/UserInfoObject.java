@@ -13,7 +13,7 @@ public class UserInfoObject {
 
         Request userInfoRequest = new Request.Builder()
                 .url(ApiList.USER_INFO.getUrl())
-                .addHeader("Authorization:", userToken)
+                .addHeader("Authorization", " " + userToken)
                 .get()
                 .build();
         OkHttpClient client = new OkHttpClient();
