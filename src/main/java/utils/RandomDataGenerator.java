@@ -62,4 +62,16 @@ public class RandomDataGenerator {
         LOGGER.info("Generate random double '" + randomDouble + "'");
         return randomDouble;
     }
+
+    public String randomCommentMessage() {
+        String randomString = UUID.randomUUID().toString().substring(5);
+        LOGGER.info("Generate random job description '" + randomString + "'");
+        return randomString;
+    }
+
+    public String randomCommentDate() {
+        String randomString = UUID.randomUUID().toString().substring(5);
+        LOGGER.info("Generate random job description '" + randomString + "'");
+        return randomString;
+    }
 }

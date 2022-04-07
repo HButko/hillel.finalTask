@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression API Test Suite">
+    <test name="API Test">
+        <classes>
+            <class name="api.auth.testSignUp"/>
+            <class name="api.auth.testSignIn"/>
+            <class name="api.comment.testCreateComment"/>
+            <class name="api.comment.testGetAllComments"/>
+            <class name="api.job.testDeleteJob"/>
+            <class name="api.job.testGetAllJobs"/>
+            <class name="api.job.testGetJobById"/>
+            <class name="api.job.testGetJobByUser"/>
+            <class name="api.job.testJobCreate"/>
+            <class name="api.user.testRequestUserInfo"/>
+            <class name="api.user.testUserById"/>
+            <class name="api.user.testUpdateUser"/>
+        </classes>
+    </test>
+</suite>

@@ -1,7 +1,8 @@
 package utils.api.enums;
 
 public enum Headers {
-    JSON("Content-Type", "application/json");
+    JSON("Content-Type", "application/json"),
+    IMAGE("Content-Type", "multipart/form-data");
 
     private String contentType;
     private String value;

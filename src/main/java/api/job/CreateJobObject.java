@@ -16,7 +16,7 @@ public class CreateJobObject {
     public JSONObject createJob(String userToken, int userId, String title, String description, double price) throws IOException {
         RequestBody requestBody = new JobCreateBody().jobCreateBody(userId, title, description, price);
 
-        Request signInRequest = new Request.Builder()
+        Request createJobRequest = new Request.Builder()
                 .url(ApiList.JOB_CREATE.getUrl())
                 .addHeader(Headers.JSON.getContentType(), Headers.JSON.getValue())
                 .addHeader("Authorization", " " + userToken)
@@ -24,7 +24,7 @@ public class CreateJobObject {
                 .build();
         OkHttpClient client = new OkHttpClient();
 
-        Response response = client.newCall(signInRequest).execute();
+        Response response = client.newCall(createJobRequest).execute();
         JSONObject jsonResponse = new JSONObject(response.body().string());
 
         return jsonResponse;

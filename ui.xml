@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression UI Test Suite">
+    <test name="UI Test">
+        <classes>
+            <class name="ui.auth.testAuth"/>
+            <class name="ui.comment.testAddComment"/>
+            <class name="ui.job.testCreateJob"/>
+            <class name="ui.job.testDeleteJob"/>
+            <class name="ui.user.testLoginAndUpdate"/>
+        </classes>
+    </test>
+</suite>
